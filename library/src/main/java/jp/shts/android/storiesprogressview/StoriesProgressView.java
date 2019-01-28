@@ -137,6 +137,16 @@ public class StoriesProgressView extends LinearLayout {
         isReverseStart = true;
         p.setMin();
     }
+    
+      public void clear() {
+        progressBars.clear();
+        storiesCount = -1;
+        current = -1;
+        storiesListener = null;
+        isComplete = false;
+        isSkipStart = false;
+        isReverseStart = false;
+    }
 
     /**
      * Set a story's duration
